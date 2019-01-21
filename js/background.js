@@ -35,11 +35,7 @@ function checkIsNew(res) {
   let resDomLength = getBugCount(res)
   
   localStorage.ZENTAO_BUG_HTML = res
-  if(localDomLength < resDomLength) {
-    return true
-  } else {
-    return false
-  }
+  return localDomLength < resDomLength
 }
 // 获取bug数
 function getBugCount(htmlStr) {
