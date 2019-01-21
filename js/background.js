@@ -34,11 +34,11 @@ function checkIsNew(res) {
   let localDomLength = getBugCount(zentaoRes)
   let resDomLength = getBugCount(res)
   
+  localStorage.ZENTAO_BUG_HTML = res
   if(localDomLength < resDomLength) {
-    localStorage.ZENTAO_BUG_HTML = res
     return true
   } else {
-    false
+    return false
   }
 }
 // 获取bug数
