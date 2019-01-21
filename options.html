@@ -1,0 +1,43 @@
+<!--
+  Copyright (c) 2012 The Chromium Authors. All rights reserved.
+  Use of this source code is governed by a BSD-style license that can be
+  found in the LICENSE file.
+
+  Brian Kennish <bkennish@chromium.org>
+
+  An option page for configuring notifications.
+-->
+<!doctype html>
+<html>
+  <head>
+    <title>zentao bug notify</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="js/options.js"></script>
+  </head>
+  <body>
+    <h1>
+      <img src="img/64.png" alt="Toast">
+      zentao bug notify
+    </h1>
+    <h2>Options</h2>
+    <form id="options">
+      <input type="checkbox" name="isActivated" checked>
+      Display a notification every
+      <select name="frequency">
+        <option>5</option>
+        <option>10</option>
+        <option>15</option>
+        <option>20</option>
+        <option>25</option>
+        <option>30</option>
+        <option>35</option>
+        <option>45</option>
+        <option>60</option>
+        <option>120</option>
+        <option>300</option>
+        <option>600</option>
+      </select>
+      seconds.
+    </form>
+  </body>
+</html>
